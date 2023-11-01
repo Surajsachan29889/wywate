@@ -1,0 +1,72 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+/* body{
+  font-family: 'Roboto', sans-serif;
+} */
+.top-stack{
+  box-shadow: inset 1px 1px 50px #545454;
+}
+.hero{
+  margin: 0;
+  padding: 0;
+  background: center center/cover no-repeat;
+  background-image: url('Rectangle 70.png');
+  filter: blur(2px);
+  animation: slideshow 25s infinite;
+}
+@keyframes slideshow {
+  0% { background-image: url('Rectangle 70.png'); }
+  25% { background-image: url('Rectangle 66.png'); }
+  50% { background-image: url('Rectangle 67.png'); }
+  75% { background-image: url('Rectangle 71.png'); }
+  100% { background-image: url('Rectangle 66.png'); }
+}
+/* .slide img {
+  width: 10rem;
+} */
+.sliderimgbox{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 120% !important;
+}
+
+.slide {
+  transform: scale(0.3);
+  transition: transform 300ms;
+  opacity: 0.5;
+}
+
+.activeSlide {
+  transform: scale(.6);
+  opacity: 1;
+}
+
+.arrow {
+  background-color: #fff;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow svg {
+  transition: color 300ms;
+}
+
+.arrow svg:hover {
+  color: #68edff;
+}
+
+.next {
+  right: -10%;
+  top: 35%;
+}
+
+.prev {
+  left: -10%;
+  top: 35%;
+}
