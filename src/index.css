@@ -21,11 +21,11 @@
   animation: slideshow 25s infinite;
 }
 @keyframes slideshow {
-  0% { background-image: url('Rectangle 70.png'); }
-  25% { background-image: url('Rectangle 66.png'); }
-  50% { background-image: url('Rectangle 67.png'); }
-  75% { background-image: url('Rectangle 71.png'); }
-  100% { background-image: url('Rectangle 66.png'); }
+  0% { background-image: url('backimg/Rectangle 70.png'); }
+  25% { background-image: url('backimg/Rectangle 66.png'); }
+  50% { background-image: url('backimg/Rectangle 67.png'); }
+  75% { background-image: url('backimg/Rectangle 71.png'); }
+  100% { background-image: url('backimg/Rectangle 68.png'); }
 }
 /* .slide img {
   width: 10rem;
