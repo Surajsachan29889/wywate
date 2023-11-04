@@ -5,12 +5,13 @@
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
-/* body{
-  font-family: 'Roboto', sans-serif;
-} */
 .top-stack{
   box-shadow: inset 1px 1px 50px #545454;
+}
+body{
+  font-family: 'Manrope', sans-serif;
 }
 .hero{
   margin: 0;
@@ -25,11 +26,8 @@
   25% { background-image: url('backimg/Rectangle 66.png'); }
   50% { background-image: url('backimg/Rectangle 67.png'); }
   75% { background-image: url('backimg/Rectangle 71.png'); }
-  100% { background-image: url('backimg/Rectangle 68.png'); }
+  100% { background-image: url('backimg/Rectangle 70.png'); }
 }
-/* .slide img {
-  width: 10rem;
-} */
 .sliderimgbox{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 120% !important;
@@ -38,11 +36,18 @@
 .slide {
   transform: scale(0.3);
   transition: transform 300ms;
-  opacity: 0.5;
+  filter: blur(5px);
 }
 
 .activeSlide {
-  transform: scale(.6);
+  transition: transform 300ms;
+  transform: scale(.7);
+  opacity: 1;
+}
+
+.adjacentSlide{
+  transition: transform 300ms;
+  transform: scale(.45);
   opacity: 1;
 }
 
@@ -53,13 +58,6 @@
   z-index: 10;
 }
 
-.arrow svg {
-  transition: color 300ms;
-}
-
-.arrow svg:hover {
-  color: #68edff;
-}
 
 .next {
   right: -10%;
@@ -69,4 +67,24 @@
 .prev {
   left: -10%;
   top: 35%;
+}
+.mid1-container{
+  background-image: url("backimg/Rectangle 1893.png");
+  background-size: cover;
+  z-index: 10;
+  position: relative;
+  font-family: 'Manrope', sans-serif;
+
+}
+.mid-heading{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+}
+hr{
+  border-top-width:3px;
+}
+.card{
+  background: url("backimg/cardback.png"), rgb(33, 33, 33) 50%;
+  background-size: cover;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }

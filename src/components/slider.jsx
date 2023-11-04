@@ -4,19 +4,18 @@ import "slick-carousel/slick/slick-theme.css";
 import FaArrowRight  from "../../public/rightarrow.svg";
 import FaArrowLeft  from "../../public/leftarrow.svg";
 import { useState } from "react";
-// import gym from "../sliderimg/gym.png"
-// import gym from "../../public/gym.svg"
-// import salon from "../../public/salon.svg"
+import gym from "../../public/gym.svg"
+import salon from "../../public/salon.svg"
 import tatto from "../../public/tatto.svg"
 import music from "../../public/music.svg"
 import takeaway from "../../public/takeaway.svg"
 import zumba from "../../public/zumba.svg"
-// import bakery from "../../public/bakery.svg"
+import bakery from "../../public/bakery.svg"
 import foodcourt from "../../public/foodcourt.svg"
 import dance from "../../public/dance.svg"
 
 
-const images = [ tatto, takeaway, music, zumba, foodcourt, dance];
+const images = [ gym, salon, bakery,tatto, takeaway, music, zumba, foodcourt, dance];
 export default function SimpleSlider() {
   const NextArrow = ({ onClick }) => {
     return (
@@ -40,25 +39,44 @@ export default function SimpleSlider() {
     lazyLoad: true,
     speed: 300,
     slidesToShow: 5,
+    draggable:true,
     centerMode: true,
-    centerPadding: "100px",
+    centerPadding: "0px",
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    beforeChange: (current, next) => setImageIndex(next),
+    beforeChange: (current, next) =>{ 
+      setImageIndex(next)    },
   };
   return (
-    <div className="w-[70%] m-auto h-[50vh]">
+    <div className="w-[70%] m-auto h-[50vh] relative">
+      <Slider {...settings}>
+        {images.map((img, idx) => {
+          let slide = 'slide';
 
-    <Slider {...settings}>
-{images.map((img, idx) => (
-  
+          if (idx === imageIndex) {
+            slide = 'activeSlide';
+          } else if (
+            idx === imageIndex - 1 || idx === imageIndex + 1 ||
+            idx === (imageIndex === 0 ? images.length - 1:imageIndex+1) ||
+            idx ===(imageIndex === images.length-1 ? 0 : imageIndex-1)
+          ) {
+            slide = 'adjacentSlide';
+          }
 
-          <div key={idx} className={` rounded-3xl h-[280px] p-[10px] sliderimgbox ${idx === imageIndex ? "slide activeSlide" : "slide"}`}>
-            <img src={img} alt={img}  className={idx === 9 ? 'h-[400px] w-[400px] ' : 'h-[350px] w-[350px] pb-[40%]'} />
-          </div>
-
-        ))}
-    </Slider>
+          return (
+            
+            <div key={idx} className={`rounded-3xl h-[280px] p-[10px] sliderimgbox ${slide}`}>
+              <img
+                src={img}
+                alt={img}
+                className={idx === 9 ? 'h-[400px] w-[400px]' : 'h-[350px] w-[350px] pb-[40%]'}
+              />
+              
+            </div>
+            
+          );
+        })}
+      </Slider>
     </div>
   );
 }

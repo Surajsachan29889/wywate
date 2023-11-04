@@ -5,7 +5,7 @@ import build from "../../public/business.svg";
 
 export default function Navbar() {
   return (
-    <div className="w-[70%] h-[104px] left-[15%] flex  items-center  bg-[#ACB5BD] backdrop-blur-lg bg-opacity-30 rounded-2xl fixed top-5 m-0 z-10 ">
+    <div className="w-[70%] h-[104px] left-[15%] flex  items-center  bg-[#ACB5BD] backdrop-blur-lg bg-opacity-30 rounded-2xl fixed top-5 m-0 z-[1000] ">
       <div className="w-[40%] pl-5 ">
         <img src={wyvatelogo} alt="logo" />
       </div>
