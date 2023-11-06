@@ -9,7 +9,7 @@ import email from "../../public/email.svg";
 
 export default function Footer2() {
   return (
-    <div className="relative h-[80vh]">
+    <div className="relative h-[90%]">
       <div className="h-[.5rem] w-[100%] bg-[#09C27E] "></div>
       <div className="h-[100%] bg-black flex flex-col  ">
         <div className="flex flex-col items-center justify-center gap-8 mt-[8%] ">
@@ -75,7 +75,7 @@ export default function Footer2() {
           </div>
         </div>
         <div></div>
-        <div className="flex gap-[23%] justify-center mt-[5%] font-thin text-[grey] text-[15px] ">
+        <div className="flex gap-[23%] justify-center mt-[5%] mb-[5%] font-thin text-[grey] text-[15px] ">
           <div className="text-white flex gap-20">
             <a href="#">
               <span>About Us</span>

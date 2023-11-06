@@ -48,7 +48,7 @@ export default function SimpleSlider() {
       setImageIndex(next)    },
   };
   return (
-    <div className="w-[70%] m-auto h-[50vh] relative">
+    <div className="w-[70%] left-[14.5%] h-[50vh] relative">
       <Slider {...settings}>
         {images.map((img, idx) => {
           let slide = 'slide';
@@ -64,8 +64,8 @@ export default function SimpleSlider() {
           }
 
           return (
-            
-            <div key={idx} className={`rounded-3xl h-[280px] p-[10px] sliderimgbox ${slide}`}>
+            // rounded-3xl h-[280px] p-[10px] = box style
+            <div key={idx} className={` sliderimgbox ${slide}`}>
               <img
                 src={img}
                 alt={img}

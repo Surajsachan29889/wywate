@@ -9,10 +9,10 @@ export default function Hero(){
             <div className=" w-[100%] h-[580px] hero ">
             </div>
             <div className=" ">
-                <h1 className="w-[50%] text-[60px] font-sans font-extrabold absolute top-[30%] left-[15%] text-[#FFFFFF] drop-shadow-lg ">Discover & Book Local Services with your Favourite Businesses</h1>  
+                <h1 className="w-[50%] text-[60px] font-sans font-extrabold absolute top-[30%] left-[8%] text-[#FFFFFF] drop-shadow-lg ">Discover & Book Local Services with your Favourite Businesses</h1>  
             </div>
             <div>
-                <img src={mobilehero} className="absolute top-[30%]  left-[70%] "></img>
+                <img src={mobilehero} className="absolute top-[30%]  right-[9%] "></img>
             </div>
 
         </div>

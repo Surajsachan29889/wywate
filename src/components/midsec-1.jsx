@@ -8,16 +8,16 @@ import discount from "../../public/discount.svg";
 export default function Midsec1() {
   return (
     <div className="mid1-container h-[90vh] w-[100%] flex flex-col gap-10 ">
-      <div className="ml-[15%] ">
+      <div className="ml-[8%] ">
         <img src={midlogo}></img>
       </div>
-      <div className="ml-[15%]">
+      <div className="ml-[8%]">
         <h1 className="text-[4vw] w-[60%] mid-heading">
           <span className="text-[grey]">Grow</span> Your Business, Sell Services
           Online
         </h1>
       </div>
-      <div className="flex flex-col gap-8 ml-[15%]">
+      <div className="flex flex-col gap-8 ml-[8%]">
         <div className="w-[50%] flex gap-5 ">
           <img src={arrowpoint}></img>
           <img src={discount}></img>
@@ -40,7 +40,7 @@ export default function Midsec1() {
           </p>
         </div>
       </div>
-      <div className="flex flex-row gap-10 ml-[15%]">
+      <div className="flex flex-row gap-10 ml-[8%]">
         <div>
           <a href="#">
             <button className="h-12 w-[10vw] bg-[black] rounded-xl text-[white]  hover:bg-[#1a1a1a] transition-all ">
