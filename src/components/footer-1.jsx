@@ -1,6 +1,6 @@
 import triangle from "../../public/triangle.svg";
 import dotframe from "../../public/dotframe.svg";
-// import cardmask from "../../public/cardmask.svg";
+// import cardmask from "../../public/cardmask.svg";zSSS
 
 export default function Footer1() {
   return (

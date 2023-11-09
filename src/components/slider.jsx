@@ -36,9 +36,9 @@ export default function SimpleSlider() {
 
   var settings = {
     infinite: true,
-    lazyLoad: true,
     speed: 300,
     slidesToShow: 5,
+    autoplay: true,
     draggable:true,
     centerMode: true,
     centerPadding: "0px",

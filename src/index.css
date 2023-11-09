@@ -87,3 +87,7 @@ hr{
   background-size: cover;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
+.terms{
+  box-shadow: rgb(38, 57, 77) 0px 10px 30px -10px;
+
+}

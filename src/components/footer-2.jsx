@@ -30,7 +30,7 @@ export default function Footer2() {
           <a href="#">
             <img src={yt} alt=".." />
           </a>
-          <a href="#">
+          <a href="https://www.facebook.com/Wyvate/" target="_blank" rel="noreferrer" >
             <img src={fb} alt=".." />
           </a>
         </div>
@@ -89,7 +89,7 @@ export default function Footer2() {
             <a href="#">
               <span>Sitemap</span>
             </a>
-            <a href="#">
+            <a href="/terms" target="_blank" rel="noreferrer" >
               <span>Terms of Use</span>
             </a>
           </div>
