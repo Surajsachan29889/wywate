@@ -9,12 +9,12 @@ import email from "../../public/email.svg";
 
 export default function Footer2() {
   return (
-    <div className="relative h-[90%]">
+    <div className="relative h-[90%] sm:w-[100%]">
       <div className="h-[.5rem] w-[100%] bg-[#09C27E] "></div>
       <div className="h-[100%] bg-black flex flex-col  ">
-        <div className="flex flex-col items-center justify-center gap-8 mt-[8%] ">
+        <div className="flex flex-col items-center justify-center gap-8 mt-[8%]  ">
           <img src={footerlogo} alt=".." />
-          <p className="text-[white] w-[50%] text-center font-thin ">
+          <p className="text-[white] w-[50%] text-center font-thin footer-para ">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
             voluptate enim commodi natus sunt. Provident nulla rem veritatis
             voluptates aspernatur....
@@ -23,7 +23,7 @@ export default function Footer2() {
             </a>
           </p>
         </div>
-        <div className="flex gap-5 justify-center mt-[3%] ">
+        <div className="flex gap-5 justify-center sm:mt-[3%] mt-[10%] ">
           <a href="#">
             <img src={whatsapp} alt=".." />
           </a>
@@ -34,7 +34,7 @@ export default function Footer2() {
             <img src={fb} alt=".." />
           </a>
         </div>
-        <div className="text-[white] flex gap-[10%] items-center justify-center mt-[3%] ">
+        <div className="text-[white] flex gap-[10%] sm:flex-row flex-col items-center justify-center sm:mt-[3%] mt-[10%] ">
           <div className="grid grid-rows-3 grid-flow-col">
             <img
               src={phone}
@@ -75,8 +75,8 @@ export default function Footer2() {
           </div>
         </div>
         <div></div>
-        <div className="flex gap-[23%] justify-center mt-[5%] mb-[5%] font-thin text-[grey] text-[15px] ">
-          <div className="text-white flex gap-20">
+        <div className="flex sm:gap-[23%] gap-10 justify-center mt-[5%] mb-[5%] font-thin text-[grey] text-[15px]  ">
+          <div className="text-white flex sm:flex-row flex-col sm:gap-20">
             <a href="#">
               <span>About Us</span>
             </a>

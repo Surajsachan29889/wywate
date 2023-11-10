@@ -48,7 +48,7 @@ export default function SimpleSlider() {
       setImageIndex(next)    },
   };
   return (
-    <div className="w-[70%] left-[14.5%] h-[50vh] relative">
+    <div className="sm:w-[70%] w-[80%] sm:left-[14.5%] left-[9.5%] sm:h-[50vh] h-[40vh] relative">
       <Slider {...settings}>
         {images.map((img, idx) => {
           let slide = 'slide';

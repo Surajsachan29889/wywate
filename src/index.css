@@ -30,7 +30,7 @@ body{
 }
 .sliderimgbox{
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-  width: 120% !important;
+  /* width: 120% !important; */
 }
 
 .slide {
@@ -90,4 +90,10 @@ hr{
 .terms{
   box-shadow: rgb(38, 57, 77) 0px 10px 30px -10px;
 
+}
+@media(max-width:800px){
+  .nav-btn p,.nav-logo,.hero-mob,.mid1-btn p,.midsec2-img img, .midsec2-btn p,.midsec2-btn h1, .footer-para  {
+    display: none;
+  }
+  
 }
