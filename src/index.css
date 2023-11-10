@@ -92,7 +92,7 @@ hr{
 
 }
 @media(max-width:800px){
-  .nav-btn p,.nav-logo,.hero-mob,.mid1-btn p,.midsec2-img img, .midsec2-btn p,.midsec2-btn h1, .footer-para  {
+  .nav-btn p,.nav-logo,.hero-mob,.mid1-btn p,.midsec2-img img, .midsec2-btn p,.midsec2-btn h1, .footer-para,.loader  {
     display: none;
   }
   
