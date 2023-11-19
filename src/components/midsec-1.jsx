@@ -2,7 +2,7 @@ import midlogo from "../../public/midlogo.svg";
 import arrowpoint from "../../public/arrowpoint.svg";
 import radio from "../../public/radio.svg";
 import building from "../../public/building.svg";
-import download from "../../public/Download.svg";
+// import download from "../../public/Download.svg";
 import discount from "../../public/discount.svg";
 
 export default function Midsec1() {
@@ -55,14 +55,14 @@ export default function Midsec1() {
             </button>
           </a>
         </div>
-        <div>
+        {/* <div>
           <a href="#">
             <button className="h-12 sm:w-[13vw] w-[20vw] bg-[black] rounded-xl text-[white] flex items-center justify-center gap-3 hover:bg-[#1a1a1a] transition-all mid1-btn">
               <img src={download} alt=".." />
                <p>Download Now</p>
             </button>
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

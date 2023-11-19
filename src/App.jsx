@@ -1,5 +1,6 @@
-import { lazy, Suspense} from 'react';
+import { lazy, Suspense,useState} from 'react';
 import GridLoader from 'react-spinners/GridLoader';
+import Demoform from './components/demoform';
 // import Navbar from './components/navbar';
 // import Hero from './components/hero';
 
@@ -14,20 +15,24 @@ const Footer2 = lazy(() => import('./components/footer-2'));
 
 
 function App() {
+  const[isModalVisible, setIsModalVisible] = useState(false);
+  const openModal = () => setIsModalVisible(true);
+  const closeModal = () => setIsModalVisible(false);
+  
   return (
     <div>
       <Suspense fallback={<div className='absolute top-[25%] left-[40%] loader '><GridLoader
           size={100}  
           color='#00CC99'
       /></div>}>
-      <Navbar />
-      <Hero />
-      {/* Wrap lazy-loaded components with Suspense */}
+        <Navbar openModal={openModal} />
+        <Hero />
         <CenterModeSlickCarousel />
         <Midsec1 />
         <Midsec2 />
         <Footer1 />
         <Footer2 />
+        {isModalVisible && <Demoform onClose={closeModal} />}
       </Suspense>
     </div>
   );
